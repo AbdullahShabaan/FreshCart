@@ -62,7 +62,10 @@ export default function Navbar() {
             )}
           </div>
           <div className="flex flex-1 items-center justify-start lg:items-stretch lg:justify-start">
-            <Link to="/" className="flex flex-shrink-0 items-center text-black">
+            <Link
+              to="/FreshCart"
+              className="flex flex-shrink-0 items-center text-black"
+            >
               <img src={frechCartIcon} alt="frechCartIcon" />
             </Link>
             {userToken && (
@@ -74,7 +77,7 @@ export default function Navbar() {
                       to={item.href}
                       className={classNames(
                         "text-gray-500 hover:text-green-400 block rounded-md py-2 text-base font-medium",
-                        "rounded-md  py-2 text-sm font-medium"
+                        "rounded-md py-2 text-sm font-medium"
                       )}
                     >
                       {item.name}
@@ -86,7 +89,7 @@ export default function Navbar() {
           </div>
           <Suspense>
             {userToken && (
-              <Link to="/cart">
+              <Link to="/FreshCart/cart">
                 <CartIcon />
               </Link>
             )}

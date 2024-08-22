@@ -121,7 +121,7 @@ const Login = () => {
         {isError && <p className="text-red-600 text-center pt-4">{isError}</p>}
         <p className="flex flex-col items-center justify-center mt-5 text-center text-md text-gray-500">
           <Link
-            to="/forgetPassword"
+            to="/FreshCart/forgetPassword"
             className="underline hover:text-green-500 hover:underline cursor-pointer transition ease-in duration-300"
           >
             <span>Forget Your Password?</span>
@@ -130,7 +130,7 @@ const Login = () => {
         <p className="flex flex-col items-center justify-center mt-2 text-center text-md text-gray-500">
           <span>Don{`'`}t have an account?</span>
           <Link
-            to="/register"
+            to="/FreshCart/register"
             className="text-green-500 hover:text-indigo-500no-underline hover:underline cursor-pointer transition ease-in duration-300"
           >
             Sign up

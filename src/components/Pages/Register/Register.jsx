@@ -202,7 +202,7 @@ const Register = () => {
         <p className="flex flex-col items-center justify-center mt-10 text-center text-md text-gray-500">
           <span>Already have account ?</span>
           <Link
-            to="/login"
+            to="/FreshCart/login"
             className="text-green-500 hover:text-green-500 no-underline hover:underline cursor-pointer transition ease-in duration-300"
           >
             Sign In
