@@ -246,7 +246,7 @@ const Cart = () => {
             <Link
               to={
                 cartProducts?.data?.products.length
-                  ? `/checkOut/${cartProducts?.data?._id}`
+                  ? `/FreshCart/checkOut/${cartProducts?.data?._id}`
                   : ""
               }
               disabled={!cartProducts?.data?.products.length}

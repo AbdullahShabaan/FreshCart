@@ -125,7 +125,7 @@ const RelatedProducts = ({ categoryId }) => {
               </div>
               <div className="px-5 py-3">
                 <Link
-                  to={`/productDetails/${product.id}`}
+                  to={`/FreshCart/productDetails/${product.id}`}
                   className="cursor-pointer"
                 >
                   <p className="text-green-600 tracking-tight line-clamp-1">

@@ -52,7 +52,9 @@ const Categories = () => {
                 key={category._id}
                 className="image cursor-pointer outline-none "
               >
-                <Link to={`/subCategories/${category._id}/${category.name}`}>
+                <Link
+                  to={`/FreshCart/subCategories/${category._id}/${category.name}`}
+                >
                   <img
                     src={category.image}
                     className="w-full h-[200px] "
