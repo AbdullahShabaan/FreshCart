@@ -4,7 +4,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -72,16 +72,15 @@ export default function Navbar() {
               <div className="hidden sm:ml-6 lg:block">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
-                    <NavLink
+                    <Link
                       key={item.name}
                       to={item.href}
-                      className={classNames(
-                        "text-gray-500 hover:text-green-400 block rounded-md py-2 text-base font-medium",
-                        "rounded-md py-2 text-sm font-medium"
-                      )}
+                      className={`text-gray-500 hover:text-green-400 block rounded-md py-2 text-base font-medium ${
+                        location.pathname == item.href ? "active" : ""
+                      } `}
                     >
                       {item.name}
-                    </NavLink>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -141,15 +140,17 @@ export default function Navbar() {
         <DisclosurePanel className="lg:hidden">
           <div className="space-y-1 px-2 pb-3 pt-2">
             {navigation.map((item) => (
-              <NavLink
+              <Link
                 key={item.name}
                 to={item.href}
                 className={classNames(
-                  "text-gray-500 hover:text-green-400 block rounded-md px-5 py-2 text-base font-medium"
+                  `text-gray-500 hover:text-green-400 block rounded-md px-5 py-2 text-base font-medium ${
+                    location.pathname == item.href ? "active" : ""
+                  }`
                 )}
               >
                 {item.name}
-              </NavLink>
+              </Link>
             ))}
           </div>
         </DisclosurePanel>

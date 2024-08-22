@@ -15,7 +15,6 @@ const Brands = () => {
   });
   const brands = data?.data?.data;
   const specificBrandData = specificBrand?.data?.data;
-  console.log(specificBrandData);
 
   const specificBrandHandeller = (brandId) => {
     setModal(true);
