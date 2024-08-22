@@ -6,7 +6,7 @@ export const CheckOut = async (values, cartId, userToken) => {
   CreateCashOrder(values, cartId, userToken);
   await axios
     .post(
-      `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:5173`,
+      `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://abdullahshabaan.github.io/FreshCart`,
       {
         shippingAddress: values,
       },
