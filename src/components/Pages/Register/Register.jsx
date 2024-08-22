@@ -51,7 +51,7 @@ const Register = () => {
         console.log(response);
         SuccessAlert("Register", "Registeration Successful");
         setTimeout(() => {
-          navigate("/login");
+          navigate("/FreshCart/login");
         }, 1000);
       })
       .catch((error) => {
