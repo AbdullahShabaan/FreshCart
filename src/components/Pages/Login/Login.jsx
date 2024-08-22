@@ -32,7 +32,7 @@ const Login = () => {
         setIsLoading(false);
         setUserToken(response.data.token);
         localStorage.setItem("userToken", response.data.token);
-        if (location.pathname == "/login") {
+        if (location.pathname == "/FreshCart/login") {
           navigate("/FreshCart");
         } else {
           navigate(location.pathname);
