@@ -33,7 +33,7 @@ const Login = () => {
         setUserToken(response.data.token);
         localStorage.setItem("userToken", response.data.token);
         if (location.pathname == "/login") {
-          navigate("/");
+          navigate("/FreshCart");
         } else {
           navigate(location.pathname);
         }
