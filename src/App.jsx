@@ -33,7 +33,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path: "",
+      path: "/FreshCart",
       element: <Layout />,
       children: [
         {
@@ -45,7 +45,7 @@ function App() {
           ),
         },
         {
-          path: "/login",
+          path: "/FreshCart/login",
           element: (
             <ProtectAuthRoute>
               <Login />
@@ -53,7 +53,7 @@ function App() {
           ),
         },
         {
-          path: "/forgetPassword",
+          path: "/FreshCart/forgetPassword",
           element: (
             <ProtectAuthRoute>
               <ForgetPassword />
@@ -61,7 +61,7 @@ function App() {
           ),
         },
         {
-          path: "/resetPassword/:email",
+          path: "/FreshCart/resetPassword/:email",
           element: (
             <ProtectRePassword>
               <ResetPassword />
@@ -69,7 +69,7 @@ function App() {
           ),
         },
         {
-          path: "/register",
+          path: "/FreshCart/register",
           element: (
             <ProtectAuthRoute>
               <Register />
@@ -77,7 +77,7 @@ function App() {
           ),
         },
         {
-          path: "/resetPasswordCode/:email",
+          path: "/FreshCart/resetPasswordCode/:email",
           element: (
             <ProtectRePassword>
               <ResetPasswordCode />
@@ -85,7 +85,7 @@ function App() {
           ),
         },
         {
-          path: "/categories",
+          path: "/FreshCart/categories",
           element: (
             <ProtectRoute>
               <Categories />
@@ -93,7 +93,7 @@ function App() {
           ),
         },
         {
-          path: "/brands",
+          path: "/FreshCart/brands",
           element: (
             <ProtectRoute>
               <Brands />
@@ -102,7 +102,7 @@ function App() {
         },
 
         {
-          path: "/Cart",
+          path: "/FreshCart/Cart",
           element: (
             <ProtectRoute>
               <Cart />
@@ -110,7 +110,7 @@ function App() {
           ),
         },
         {
-          path: "/productDetails/:id",
+          path: "/FreshCart/productDetails/:id",
           element: (
             <ProtectRoute>
               <ProductDetails />
@@ -118,7 +118,7 @@ function App() {
           ),
         },
         {
-          path: "/checkOut/:id",
+          path: "/FreshCart/checkOut/:id",
           element: (
             <ProtectRoute>
               <CheckOutConfirm />
@@ -126,7 +126,7 @@ function App() {
           ),
         },
         {
-          path: "/products",
+          path: "/FreshCart/products",
           element: (
             <ProtectRoute>
               <Products />
@@ -134,7 +134,7 @@ function App() {
           ),
         },
         {
-          path: "/allorders",
+          path: "/FreshCart/allorders",
           element: (
             <ProtectRoute>
               <Orders />
@@ -142,7 +142,7 @@ function App() {
           ),
         },
         {
-          path: "/wishlist",
+          path: "/FreshCart/wishlist",
           element: (
             <ProtectRoute>
               <WishList />
@@ -150,7 +150,7 @@ function App() {
           ),
         },
         {
-          path: "/subCategories/:categoryId/:categoryName",
+          path: "/FreshCart/subCategories/:categoryId/:categoryName",
           element: (
             <ProtectRoute>
               <SubCategories />

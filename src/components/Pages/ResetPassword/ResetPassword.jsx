@@ -59,7 +59,7 @@ const ResetPassword = () => {
             toast.success("Password Has Been Changed Successfully");
             setUserToken(req.data.token);
             localStorage.setItem("userToken", req.data.token);
-            navigate("/");
+            navigate("/FreshCart");
           } catch (e) {
             console.log(e);
           }

@@ -80,7 +80,10 @@ const RecentProducts = () => {
             className="product px-3 my-5 overflow-hidden relative"
             key={product.id}
           >
-            <Link to={`/productDetails/${product.id}`} className="photo">
+            <Link
+              to={`/FreshCart/productDetails/${product.id}`}
+              className="photo"
+            >
               <img src={product.imageCover} alt={product.title} />
               <p className="text-green-600 tracking-tight line-clamp-1">
                 {product.category.name}

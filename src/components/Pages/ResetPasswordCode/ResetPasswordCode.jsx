@@ -41,7 +41,7 @@ const ResetPasswordCode = () => {
                 toast.success(
                   "The verification code has been successfully reset."
                 );
-                navigate(`/resetPassword/${email}`);
+                navigate(`/FreshCart/resetPassword/${email}`);
               } catch (e) {
                 console.log(e.message);
               }

@@ -19,7 +19,9 @@ const Categories = () => {
       <div className="flex flex-wrap py-5">
         {categoriesData?.map((category, index) => (
           <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4" key={index}>
-            <Link to={`/subCategories/${category._id}/${category.name}`}>
+            <Link
+              to={`/FreshCart/subCategories/${category._id}/${category.name}`}
+            >
               <img
                 src={category.image}
                 alt={category.name}

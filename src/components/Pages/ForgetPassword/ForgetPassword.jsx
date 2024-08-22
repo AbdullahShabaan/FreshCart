@@ -43,7 +43,7 @@ const ForgetPasswordimport = () => {
             toast.success(req.data.message);
             setForgetPassKey("12345");
             localStorage.setItem("rePasswordKey", "12345");
-            navigate(`/resetPasswordCode/${values.email}`);
+            navigate(`/FreshCart/resetPasswordCode/${values.email}`);
           } catch (e) {
             console.error(e.message);
           }

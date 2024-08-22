@@ -19,13 +19,13 @@ import { lazy, Suspense } from "react";
 const CartIcon = lazy(() => import("../CartIcon/CartIcon"));
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Categories", href: "/categories" },
-  { name: "Brands", href: "/brands" },
-  { name: "Cart", href: "/cart" },
-  { name: "Products", href: "/products" },
-  { name: "Orders", href: "/allorders" },
-  { name: "WishList", href: "/wishlist" },
+  { name: "Home", href: "/FreshCart" },
+  { name: "Categories", href: "/FreshCart/categories" },
+  { name: "Brands", href: "/FreshCart/brands" },
+  { name: "Cart", href: "/FreshCart/cart" },
+  { name: "Products", href: "/FreshCart/products" },
+  { name: "Orders", href: "/FreshCart/allorders" },
+  { name: "WishList", href: "/FreshCart/wishlist" },
 ];
 
 function classNames(...classes) {
@@ -38,7 +38,7 @@ export default function Navbar() {
   const logout = () => {
     localStorage.removeItem("userToken");
     setUserToken("");
-    navigate("/login");
+    navigate("/FreshCart/login");
   };
 
   return (
@@ -117,13 +117,13 @@ export default function Navbar() {
             {!userToken && (
               <>
                 <Link
-                  to="/login"
+                  to="/FreshCart/login"
                   className="rounded-md px-3 py-2 text-sm font-medium text-black"
                 >
                   Login
                 </Link>
                 <Link
-                  to="/register"
+                  to="/FreshCart/register"
                   className="rounded-md px-3 py-2 text-sm font-medium text-black"
                 >
                   Register

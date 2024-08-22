@@ -4,7 +4,6 @@ import Loader from "../../Loader/Loader";
 import ErrorComponenet from "../../ErrorComponenet/ErrorComponenet";
 import useSpecificBrand from "../../../hooks/Brands/useSpecificBrand";
 import { useState } from "react";
-import ModalComponenet from "../../Modal/Modal";
 import Modal from "../../Modal/Modal";
 
 const Brands = () => {
